@@ -1,0 +1,135 @@
+nav {
+    height: 70px;
+    background-color: #003049;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #00b4d8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #00b4d8;
+}
+
+.nav-links li a.active {
+    background-color: #1e2d53;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .hamburger span {
+        background: #ffffff;
+        height: 3px;
+        width: 100%;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #00263b;
+        display: none;
+        padding: 1rem 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        animation: slideDown 0.3s ease-in-out forwards;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: 8px 20px;
+        width: 100%;
+        transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .nav-links li a:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
