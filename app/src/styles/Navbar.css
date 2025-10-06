@@ -133,3 +133,14 @@ nav {
         }
     }
 }
+
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+}
