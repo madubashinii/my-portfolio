@@ -133,3 +133,17 @@
     background: linear-gradient(135deg, #0096c7, #005f86);
     transform: translateY(-2px);
 }
+
+.cv-msg {
+    margin-top: 5px;
+    color: #ff5555;
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cv-msg.show {
+    opacity: 1;
+    transform: translateY(0);
+}
