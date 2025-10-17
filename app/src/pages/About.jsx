@@ -28,7 +28,6 @@ function About() {
                     My passion lies in <strong>full-stack development</strong>, where I bring together frontend creativity and backend logic to create complete, user-centric solutions. I value collaboration and believe that working with others enhances both learning and innovation.
                 </p>
 
-
                 <p className="gpa">
                     🎓 <strong>Current GPA:</strong> 3.52 / 4.0
                 </p>
