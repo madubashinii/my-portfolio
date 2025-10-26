@@ -48,7 +48,7 @@ function Home() {
 
                 <div className="social-icons">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/madubashinii"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -56,7 +56,7 @@ function Home() {
                         <i className="fab fa-github"></i>
                     </a>
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/nilakshi-madubashini"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
